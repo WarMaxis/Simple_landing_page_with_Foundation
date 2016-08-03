@@ -9,7 +9,7 @@ body {
 
 .hero_section {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background-image: url("../img/background.jpg");
 	background-position: center center;
 	background-size: 100% 100%;
@@ -19,7 +19,7 @@ body {
 
 .hero_row {
 	height: 95vh;
-	width: 100vw;
+	width: 100%;
 }
 
 .logo {
@@ -59,7 +59,7 @@ body {
 
 #example-menu {
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
 	height: 35px;
 	padding: 0;
@@ -71,4 +71,35 @@ body {
 			padding: 0.7rem 0.7rem;
 		}
 	}
+}
+
+#about {
+	color: $text-primary-color;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	background-color: $background-light-color;
+	height: auto;
+}
+
+.section_title {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.paragraph {
+	color: $text-primary-color;
+	text-align: justify;
+}
+
+.paragraph_title {
+	color: $text-primary-color;
+	text-align: left;
+	font-size: 16px;
+	font-weight: $font-bold;
+	margin-bottom: 15px;
+}
+
+.paragraph_title.last {
+	text-align: center;
 }
