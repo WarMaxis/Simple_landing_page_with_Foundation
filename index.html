@@ -12,17 +12,44 @@
 <body>
 	<section>
 		<div class="hero_section">
+		
+			<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+				<button class="menu-icon" type="button" data-toggle></button>
+				<div class="title-bar-title">Menu</div>
+			</div>
+			
+			<div class="top-bar" id="example-menu">
+				<div class="top-bar-right">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li><a href="#">O nas</a></li>
+						<li><a href="#">Usługi</a></li>
+						<li><a href="#">Referencje</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+			
 			<div class="hero_row align-middle row">
 				<div class="small-12 columns">
 					<div class="hero_container">
-						<img class="logo" src="img/logo.png">
-						<h1>Prywatne pogotowie ratunkowe</h1>
-						<h2>Z nami zawsze bezpiecznie</h2>
+						<img class="logo" src="img/logo.png" alt="logo">
+						<h1 class="hero_title">Prywatne pogotowie ratunkowe</h1>
+						<h2 class="hero_title2">Z nami zawsze bezpiecznie</h2>
 					</div>
 				</div>
 			</div>
+			
+			<a href="#">
+				<div class="link_below"></div>
+			</a>
+			
 		</div>
 	</section>
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/foundation.js"></script>
 	<script src="js/app.js"></script>
 </body>
 

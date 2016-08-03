@@ -1,6 +1,12 @@
 @import "colors";
 @import "fonts";
 
+body {
+	color: $text-second-color;
+	font-family: $font;
+	font-weight: $font-light;
+}
+
 .hero_section {
 	height: 100vh;
 	width: 100vw;
@@ -8,10 +14,11 @@
 	background-position: center center;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	position: relative;
 }
 
 .hero_row {
-	height: 100vh;
+	height: 95vh;
 	width: 100vw;
 }
 
@@ -23,16 +30,45 @@
 	text-align: center;
 }
 
-h1, h2 {
+.hero_title, .hero_title2 {
 	color: $text-second-color;
 	font-family: $font;
 	font-weight: $font-light;
 }
 
-h1 {
+.hero_title {
 	font-size: 2em;
+	margin-top: 40px;
 }
 
-h2 {
+.hero_title2 {
 	font-size: 1.6em;
+	margin-top: 20px;
+}
+
+.link_below {
+	background-image: url("../img/arrow.png");
+	background-size: 100% 100%;
+	background-position: center center;
+	width: 43.5px;
+	height: 32px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 20px;
+}
+
+#example-menu {
+	position: absolute;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 35px;
+	padding: 0;
+	ul {
+		background: none;
+		a {
+			color: $text-second-color;
+			font-size: 14px;
+			padding: 0.7rem 0.7rem;
+		}
+	}
 }
