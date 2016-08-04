@@ -1,6 +1,5 @@
 @import "colors";
 @import "fonts";
-
 body {
 	color: $text-second-color;
 	font-family: $font;
@@ -8,9 +7,9 @@ body {
 }
 
 .hero_section {
-	height: 100vh;
+	height: 700px;
 	width: 100%;
-	background-image: url("../img/background.jpg");
+	background-image: url("../img/background1.jpg");
 	background-position: center center;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -18,19 +17,20 @@ body {
 }
 
 .hero_row {
-	height: 95vh;
+	height: 90%;
 	width: 100%;
 }
 
 .logo {
-	width: 20%;
+	width: 220px;
 }
 
 .hero_container {
 	text-align: center;
 }
 
-.hero_title, .hero_title2 {
+.hero_title,
+.hero_title2 {
 	color: $text-second-color;
 	font-family: $font;
 	font-weight: $font-light;
@@ -54,7 +54,75 @@ body {
 	height: 32px;
 	margin: 0 auto;
 	position: relative;
-	bottom: 20px;
+	bottom: 30px;
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+	}
+}
+
+@-moz-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+	}
+	40% {
+		-moz-transform: translateY(-30px);
+	}
+	60% {
+		-moz-transform: translateY(-15px);
+	}
+}
+
+@-o-keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-o-transform: translateY(0);
+	}
+	40% {
+		-o-transform: translateY(-30px);
+	}
+	60% {
+		-o-transform: translateY(-15px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
 }
 
 #example-menu {
@@ -69,6 +137,9 @@ body {
 			color: $text-second-color;
 			font-size: 14px;
 			padding: 0.7rem 0.7rem;
+		}
+		a:hover {
+			color: $accent-color-secondary;
 		}
 	}
 }
@@ -102,4 +173,176 @@ body {
 
 .paragraph_title.last {
 	text-align: center;
+}
+
+#services {
+	color: $text-primary-color;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	background-color: $background-dark-color;
+	height: auto;
+	border-bottom: 2px solid #a1a1a1;
+	border-top: 2px solid #a1a1a1;
+	text-align: center;
+}
+
+#first_icon {
+	height: 150px;
+}
+
+#second_icon {
+	margin-top: 52px;
+}
+
+#third_icon {
+	height: 150px;
+}
+
+.icons_container {
+	text-align: center;
+}
+
+.accent {
+	height: 6px;
+	width: 100%;
+	background-color: $accent-color-primary;
+	margin: 30px auto 0 auto;
+}
+
+.accent.first {
+	margin: 54.5px auto 0 auto;
+}
+
+.accent.last {
+	background-color: $accent-color-secondary;
+}
+
+.section_title.icons_title {
+	margin-bottom: 35px;
+}
+
+.icon_title {
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.paragraph.paragraph_icons {
+	text-align: center;
+}
+
+#references {
+	color: $text-primary-color;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	background-color: #f4f4f4;
+	height: auto;
+	text-align: center;
+	border-bottom: 2px solid #a1a1a1;
+}
+
+#instagram {
+	color: $text-primary-color;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	background-color: $background-dark-color;
+	height: auto;
+	text-align: center;
+	border-bottom: 2px solid #a1a1a1;
+}
+
+.instagram_title {
+	margin-bottom: 30px;
+}
+
+#contact {
+	color: $text-primary-color;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	height: auto;
+	text-align: center;
+}
+
+#form {
+	color: $text-primary-color;
+	padding-top: 10px;
+	padding-bottom: 80px;
+	height: auto;
+	text-align: center;
+	background-color: $accent-color-primary;
+}
+
+#owl-demo {
+	margin-top: 20px;
+}
+
+#owl-demo .item {
+	display: block;
+	padding: 30px 0px;
+	margin: 5px;
+	color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	padding: 5px 10px;
+}
+
+.owl-theme .owl-buttons i {
+	margin-top: 2px;
+}
+
+//To move navigation buttons outside use these settings:
+.owl-theme .owl-controls .owl-buttons div {
+	position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+	left: -45px;
+	top: 140px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+	right: -45px;
+	top: 140px;
+}
+
+.paragraph.contact_paragraph {
+	text-align: center;
+	line-height: 3;
+}
+
+.form_letter {
+	background-image: url("../img/letter.png");
+	background-size: 100% 100%;
+	background-position: center center;
+	width: 43.5px;
+	height: 32px;
+	margin: 10px auto 20px auto;
+}
+
+#submit_button {
+	width: 160px;
+	height: 40px;
+	background-color: #E91E63;
+	color: #ffffff;
+	font-weight: 600;
+	border: none;
+}
+
+#submit_button:hover {
+	background-color: #AD1457;
+}
+
+@media (max-width: 640px) {
+	.accent.middle {
+		margin-bottom: 30px;
+	}
+	.dropdown.menu li {
+		display: block;
+		background-color: rgba(0, 0, 0, 1);
+	}
 }
