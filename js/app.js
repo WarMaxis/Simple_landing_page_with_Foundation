@@ -2,6 +2,7 @@ $(document).foundation();
 
 $(document).ready(function() {
   $("#owl-demo").owlCarousel({
+	autoPlay : 2000,
     navigation: true,
 	items: 3,
     navigationText: [
