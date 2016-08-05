@@ -230,12 +230,23 @@ body {
 #form {
 	color: $text-primary-color;
 	padding-top: 10px;
-	padding-bottom: 80px;
 	height: auto;
 	text-align: center;
 	background-color: $accent-color-primary;
+	margin-top: 0;
 }
 
+.form_background {
+	background-image: url("../img/form_background.png");
+	background-position: center bottom;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 80px;
+	display: none;
+	transition: all 2s;
+}
 #owl-demo {
 	margin-top: 20px;
 }
@@ -285,16 +296,18 @@ body {
 	background-position: center center;
 	width: 43.5px;
 	height: 32px;
-	margin: 10px auto 20px auto;
+	margin: 10px auto 0 auto;
+	cursor: pointer;
 }
 
 #submit_button {
-	width: 160px;
+	width: 100px;
 	height: 40px;
-	background-color: #E91E63;
+	background-color: rgba(1,1,1,0);
 	color: #ffffff;
 	font-weight: 600;
-	border: none;
+	border: 3px solid #ffffff;
+	border-radius: 5px;
 }
 
 #submit_button:hover {
@@ -318,4 +331,11 @@ body {
 	.icons_container.icons_container_second {
 		margin-top: 30px;
 	}
+}
+
+#form_letter {
+	background-color: $accent-color-primary;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }

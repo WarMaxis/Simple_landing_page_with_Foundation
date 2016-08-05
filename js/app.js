@@ -12,3 +12,10 @@ $(document).ready(function() {
   });
  
 });
+
+$('#form_letter').click(function() {
+     $('.form_background').css('display', 'block');
+	$('html, body').animate({
+    scrollTop: $('.form_background').offset().top
+}, 1000);
+ });
